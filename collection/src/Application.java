@@ -1,23 +1,34 @@
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 
 public class Application {
     public static void main(String[] args) {
-        Collection c = new ArrayList();
-        c.add(new Room("Pune","Suite",6,250.0));
-        c.add("rajkumar");
-        c.add(1212);
-        int i=5;
+        Room pune = new Room("Pune", "Suite", 6, 250.0);
+        Room mumbai = new Room("Mumbai", "Suite", 6, 250.0);
+        Room bengaluru = new Room("Bengaluru", "Suite", 6, 250.0);
 
-        System.out.println();
+        Collection<Room> rooms = new ArrayList<>();
+        rooms.add(pune);
+        rooms.add(mumbai);
+        rooms.add(bengaluru);
+        bengaluru.setPetFriendly(true);
+        pune.setPetFriendly(true);
 
-        String first = "Interpolation";
-        String second = "Java";
-        String result = String.format("String %s in %s with some %2$s examples.", "Rajkumar", "Karnakar");
-        System.out.println(result);
+        rooms.stream().filter(new Predicate<Room>() {
+            @Override
+            public boolean test(Room room) {
+                System.out.format("we are testing %s has %b%n",room.name, room.isPetFriendly());
+                return room.isPetFriendly();
+            }
+        }).forEach(new Consumer<Room>() {
+            @Override
+            public void accept(Room room) {
+                System.out.println(room.name);
+            }
+        });
 
-
-
-
+       //rooms.stream().forEach(System.out::println);
     }
 }
