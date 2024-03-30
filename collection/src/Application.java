@@ -16,19 +16,9 @@ public class Application {
         bengaluru.setPetFriendly(true);
         pune.setPetFriendly(true);
 
-        rooms.stream().filter(new Predicate<Room>() {
-            @Override
-            public boolean test(Room room) {
-                System.out.format("we are testing %s has %b%n",room.name, room.isPetFriendly());
-                return room.isPetFriendly();
-            }
-        }).forEach(new Consumer<Room>() {
-            @Override
-            public void accept(Room room) {
-                System.out.println(room.name);
-            }
-        });
+        rooms.stream().filter(Room::isPetFriendly).forEach(room ->
+                System.out.println(room.name));
 
-       //rooms.stream().forEach(System.out::println);
+
     }
 }
