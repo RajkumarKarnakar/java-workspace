@@ -1,4 +1,3 @@
-
 public class Room {
     String name;
     String type;
@@ -22,12 +21,7 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room{" +
-                "name='" + name + '\'' +
-                ", type='" + type + '\'' +
-                ", capacity=" + capacity +
-                ", rate=" + rate +
-                '}';
+        return "Room{" + "name='" + name + '\'' + ", type='" + type + '\'' + ", capacity=" + capacity + ", rate=" + rate + '}';
     }
 
     public boolean isPetFriendly() {
@@ -36,5 +30,37 @@ public class Room {
 
     public void setPetFriendly(boolean petFriendly) {
         this.petFriendly = petFriendly;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
+    public double getRate() {
+        return rate;
     }
 }
