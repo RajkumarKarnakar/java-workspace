@@ -27,18 +27,18 @@ public class Main {
                 .filter(Room::isPetFriendly)
                 .forEach(room -> System.out.println(" " + room.getName()));
         System.out.println("===============------ average of all rooms --------------===============");
-        final int[] sum = {0};
-        OptionalDouble avarage = roomService.getRoomList().stream().mapToDouble(Room::getRate).average();
-        if (avarage.isPresent()) {
-            System.out.print("average value is ");
-           avarage.stream().forEach(System.out::println);
-            System.out.println(" sum of all room is "+roomService.getRoomList().stream().mapToDouble(Room::getRate).sum());
-        }else System.out.println("no such room is present");
-        Map<String,String> students = new TreeMap<>();
-        students.put("pune", "rajkumar");
-        students.put("mumbai","laxmi");
-        students.keySet().forEach(System.out::println);
-        roomService.getRoomList().sort(Room.comparator);
+//        final int[] sum = {0};
+//        OptionalDouble avarage = roomService.getRoomList().stream().mapToDouble().average();
+//        if (avarage.isPresent()) {
+//            System.out.print("average value is ");
+//           avarage.stream().forEach(System.out::println);
+//            System.out.println(" sum of all room is "+roomService.getRoomList().stream().mapToDouble(Room::getRate).sum());
+//        }else System.out.println("no such room is present");
+//        Map<String,String> students = new TreeMap<>();
+//        students.put("pune", "rajkumar");
+//        students.put("mumbai","laxmi");
+//        students.keySet().forEach(System.out::println);
+//        roomService.getRoomList().sort(Room.comparator);
 
     }
 
