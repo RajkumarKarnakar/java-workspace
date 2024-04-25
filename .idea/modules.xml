@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StringMatch/StringMatch.iml" filepath="$PROJECT_DIR$/StringMatch/StringMatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-data-structure/arrays/arrays.iml" filepath="$PROJECT_DIR$/all-data-structure/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/cars/cars.iml" filepath="$PROJECT_DIR$/cars/cars.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-data-structure/collections/collections.iml" filepath="$PROJECT_DIR$/all-data-structure/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/duplicacy-remover/duplicacy-remover.iml" filepath="$PROJECT_DIR$/duplicacy-remover/duplicacy-remover.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-classes/java-classes.iml" filepath="$PROJECT_DIR$/java-classes/java-classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-workspace.iml" filepath="$PROJECT_DIR$/java-workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-data-structure/linked-list/linked-list.iml" filepath="$PROJECT_DIR$/all-data-structure/linked-list/linked-list.iml" />
       <module fileurl="file://$PROJECT_DIR$/meeting-slot/meeting-slot.iml" filepath="$PROJECT_DIR$/meeting-slot/meeting-slot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-data-structure/queue/queue.iml" filepath="$PROJECT_DIR$/all-data-structure/queue/queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/recursive/recursive.iml" filepath="$PROJECT_DIR$/recursive/recursive.iml" />
       <module fileurl="file://$PROJECT_DIR$/rooms/rooms.iml" filepath="$PROJECT_DIR$/rooms/rooms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-data-structure/stack/stack.iml" filepath="$PROJECT_DIR$/all-data-structure/stack/stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/string-match/string-match.iml" filepath="$PROJECT_DIR$/string-match/string-match.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-data-structure/tree/tree.iml" filepath="$PROJECT_DIR$/all-data-structure/tree/tree.iml" />
     </modules>
   </component>
 </project>
